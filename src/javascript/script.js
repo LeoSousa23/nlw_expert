@@ -94,6 +94,9 @@ const questions = [
 const quiz = document.querySelector('#quiz')
 const template = document.querySelector('template')
 const certain = new Set()
+const totalQuestions = questions.length
+const viewTotal = document.querySelector('#hits span')
+viewTotal.textContent = certain.size + ' de ' + totalQuestions
 
 for (const item of questions) {
   //pra cada item ele clona o template
@@ -118,6 +121,7 @@ for (const item of questions) {
       if(itsCorrect){
          certain.add(item)
       }
+      viewTotal.textContent = certain.size + ' de ' + totalQuestions
     }
 
     quizItem.querySelector('dl').appendChild(dt)
