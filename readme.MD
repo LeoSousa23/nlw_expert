@@ -8,4 +8,4 @@ O que aprendemos na aula:
 
 # Atribuir um filho => appendChield() utilizada para adicionar um nó (elemento) como filho de outro nó. 
 
-# Clonar um elemento => cloneNode() usada para criar uma cópia exata de um nó (elemento) no documento. Ela pertence a elementos do DOM, como nós de elemento HTML. Se o parametro passado for true, o método realizará uma clonagem profunda, copiando todos os descendentes do nó.
+# Clonar um elemento => cloneNode(true) usada para criar uma cópia exata de um nó (elemento) no documento. Ela pertence a elementos do DOM, como nós de elemento HTML. Se o parametro passado for true, o método realizará uma clonagem profunda, copiando todos os descendentes do nó.
