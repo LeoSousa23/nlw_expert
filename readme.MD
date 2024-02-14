@@ -1,7 +1,9 @@
-A funcao cloneNode(true) faz um clone do primeiro filho passado pra ela, se for passado o valor TRUE pra dentro dela, ela clona todos os filhos dentro da tag pai.
+O que aprendemos na aula:
 
-O que aprendemos na aula
-* selecionar um elemento => queryselector()
-* remover um elemento => remove()
-* clonar um elemento => cloneNode()
-* atribuir um filho => appendChield()
+# Selecionar um elemento => queryselector() permite selecionar o primeiro elemento que corresponde a um seletor CSS especificado.
+
+# Remover um elemento => remove() usada para remover um nó (elemento) do documento.
+
+# Atribuir um filho => appendChield() utilizada para adicionar um nó (elemento) como filho de outro nó. 
+
+# Clonar um elemento => cloneNode() usada para criar uma cópia exata de um nó (elemento) no documento. Ela pertence a elementos do DOM, como nós de elemento HTML. Se o parametro passado for true, o método realizará uma clonagem profunda, copiando todos os descendentes do nó.
