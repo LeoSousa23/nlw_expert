@@ -8,25 +8,27 @@
   <script defer src="./src/javascript/script.js"></script>
 </head>
 <body>
-  <h1>Teste seus conhecimentos</h1>
-  <div id="quiz">adicionei contador de acertos
-    <!-- as perguntas apararecerao aqui -->
-  </div>
-  <div id="hits">
-    <strong>Acertos</strong>
-    <span>0 de 10</span>
-  </div>
-  <!-- template esta servindo como modelo de estrutura de dado para ser clonado dentro da div quiz -->
-  <template>
-    <div class="quiz-item">
-      <h3>Pergunta 01</h3>
-      <dl>
-        <dt>
-          <input type="radio" name="item" value="0">
-          <span>Resposta A</span>
-        </dt>
-      </dl>
+  <main id="app">
+    <h1>Teste seus conhecimentos</h1>
+    <div id="quiz">adicionei contador de acertos
+      <!-- as perguntas apararecerao aqui -->
     </div>
-  </template>
+    <div id="hits">
+      <strong>Acertos</strong>
+      <span>0 de 10</span>
+    </div>
+    <!-- template esta servindo como modelo de estrutura de dado para ser clonado dentro da div quiz -->
+    <template>
+      <div class="quiz-item">
+        <h3>Pergunta 01</h3>
+        <dl>
+          <dt>
+            <input type="radio" name="item" value="0">
+            <span>Resposta A</span>
+          </dt>
+        </dl>
+      </div>
+    </template>
+  </main>
 </body>
 </html>
