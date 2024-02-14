@@ -1,3 +1,5 @@
+# JavaScript
+
 O que aprendemos na aula:
 
 # Selecionar um elemento => queryselector() permite selecionar o primeiro elemento que corresponde a um seletor CSS especificado.
