@@ -2,6 +2,13 @@
 
 :root {
   font-size: 62.5%;
+  --bg-color-100: #0F172A;
+  --border-color-100: #334155;
+  --border-color-200: #475569;
+  --border-color-300: #94A3B8;
+  --gray-color-100: #1E293B;
+  --white-color-100: #F1F5F9;
+  --white-color-200: #E2E8F0;
   --color-green-100: #A3E635;
 }
 
@@ -19,12 +26,111 @@
 body {
   font-size: 1.6rem;
   font-family: "Inter", sans-serif;
+  background: var(--bg-color-100);
 }
 
 #app {
   margin: 0 auto 6.4rem;
   padding: 2rem;
   max-width: 64rem;
+}
+
+header {
+  margin-top: 6.4rem;
+  padding-bottom: 2.4rem;
+  border-bottom: .1rem solid var(--border-color-100);
+
+  & h1 {
+    font-size: 3rem;
+    margin-top: 2.4rem;
+    color: var(--white-color-100);
+  }
+}
+
+#quiz {
+  counter-reset: quiz-item;
+}
+
+.quiz-item {
+  margin-top: 2.4rem;
+  border: .1rem solid var(--border-color-200);
+  border-radius: .6rem;
+  overflow: hidden;
+
+  & h3 {
+    padding: 1.6rem 2rem;
+    color: var(--white-color-200);
+
+    display: flex;
+    align-items: center;    
+    gap: 1.2rem;
+
+    background: var(--gray-color-100);
+  }
+
+  & h3::before {
+    counter-increment: quiz-item;
+    content: counter(quiz-item);
+    
+    width: 2.8rem;
+    height: 2.8rem;
+
+    font-size: 1.2rem;
+    border-radius: 50%;
+    background: var(--border-color-200);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; /* faz com que o elemento nao incurte por falta de espaco na tela */
+  }
+
+  & dl {
+    padding: 2rem 2.4rem;
+    display: grid;
+    gap: .8rem;
+  }
+
+  & dl dt {
+    color: var(--white-color-200);
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    letter-spacing: 0;
+
+    display: flex;
+    gap: .8rem;
+    align-items: center;
+  }
+}
+
+input {
+  all: unset; /* retira todas as configuracoes padroes */
+
+  width: 1.6rem;
+  height: 1.6rem;
+
+  border-radius: 50%;
+  border: .1rem solid var(--border-color-300);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  cursor: pointer;
+}
+
+input:checked {
+  border: .1rem solid var(--color-green-100);
+
+}
+
+input:checked::before {
+  content: '';
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: var(--color-green-100);
 }
 
 #hits {
